@@ -30,6 +30,8 @@ public class Main {
 
         mua(sodaMachine, 1);
         mua(sodaMachine, 2);
+        mua(sodaMachine, 2);
+        mua(sodaMachine, 2);
         mua(sodaMachine, 3);
         mua(sodaMachine, 4);
 
