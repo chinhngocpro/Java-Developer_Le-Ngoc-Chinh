@@ -15,4 +15,4 @@
 
 ### Test Run Result
 
-![Test Run Result](https://github.com/chinhngocpro/MomoCodingTest/blob/master/screenshot/Test-run.png?raw=true)
+![Test Run Result](https://github.com/chinhngocpro/MomoCodingTest/blob/master/screenshot/test-run.png?raw=true)
