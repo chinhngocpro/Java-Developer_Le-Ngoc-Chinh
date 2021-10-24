@@ -44,16 +44,14 @@ public class SodaMachine {
             throw new ProductOutOfStockException();
         }
 
-        if (machineProduct.getProduct().getPrice() > customerWallet.checkBalance()) {
-            throw new BalanceNotEnoughException();
-        }
-
         try {
             customerWallet.withdraw(machineProduct.getProduct().getPrice());
 
             machineProduct.setStock(machineProduct.getStock() - 1);
 
             return machineProduct.getProduct().clone();
+        } catch (BalanceNotEnoughException e) {
+            throw e;
         } catch (Exception e) {
             throw new SystemErrorException();
         }
